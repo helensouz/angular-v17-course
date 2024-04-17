@@ -34,7 +34,7 @@ Computacao avaliada lentamente que retorna de forma sincrona um unico valor na i
 Promisse -> Calculo que pode ou nao eventualmente retornar um unico valor. Um Observable é uma computacao avaliada lentamente que pode retornar de forma sincrona ou assincrona zero a valores (potencialmente) infinitos a partir do momento em que é invocado
 
 ### Execucao de uma funcao sincrona
-´
+```sh
   function getNumberOne(): number{
     console.log('Returning number one')
     return 1;
@@ -44,11 +44,11 @@ Promisse -> Calculo que pode ou nao eventualmente retornar um unico valor. Um Ob
 
   valor retornado:
   1
-´
+```
 
 ### Execucao de um Observable retornando valor sincrono
 
-´
+```sh
 const numberOne = new Observable ((subscriber) => {
   console.log('Returning number one')
   subscribe.next(1)
@@ -57,7 +57,7 @@ const numberOne = new Observable ((subscriber) => {
 numberOne.subscribe((x) => {
   console.log(x)
 })
-´
+```
 
 tanto funcoes quando Observables sao calculos preguicosos sendo necessario serem chamados para que seja executado.
 #### Subscribe é o mesmo que chamar uma funcao. Um observable precisa do subscribe
