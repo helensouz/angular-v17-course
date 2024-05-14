@@ -10,10 +10,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,
-     HttpClientModule,
-     FormsModule,
-      FontAwesomeModule],
-  providers: [HttpClient ],
+    HttpClientModule
+     ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

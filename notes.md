@@ -67,3 +67,7 @@ tanto funcoes quando Observables sao calculos preguicosos sendo necessario serem
 
 #### Sincrona -> Definimos o valor especificamente para recebe-lo.
 #### Assincrona -> Consumir uma API, onde a requisicao é retornada instantaneamente. 
+
+
+### Injectable
+O servico é injetável em qualquer componente 
